@@ -14,9 +14,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return (  
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          
+       <div className=" container mx-auto px-12   absolute p-4 transform -translate-x-1/2 -translate-y-1/2 border top-1/2 left-1/2   ">
+            {children}
+       </div>
+        
+        </body>
     </html>
   );
 }
